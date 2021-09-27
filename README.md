@@ -14,6 +14,7 @@ https://xie.infoq.cn/article/11356ca6abc04c656954a89d0
 
 ## 第一个程序
 ```shell
+$ cd <GOPATH>/src/example/user/  # 译者建议
 $ mkdir hello # Alternatively, clone it if it already exists in version control.
 $ cd hello
 $ go mod init example/user/hello
@@ -59,7 +60,7 @@ func ReverseRunes(s string) string {
 ```
 编译
 ```shell
-cd <GOPATH>/hello/morestrings
+cd <GOPATH>/src/example/user/hello/morestrings
 go build
 ```
 从 `hello.go` 中引用 `morestrings`
@@ -135,7 +136,7 @@ func TestReverseRunes(t *testing.T) {
 ```
 run test
 ```shell
-$ cd <GOPATH>/hello/morestrings
+$ cd <GOPATH>/src/example/user/hello/morestrings
 $ go test
 PASS
 ok  	example/user/hello/morestrings 0.165s
